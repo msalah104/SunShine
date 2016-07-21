@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:weightSum="10">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        app:srcCompat="@mipmap/ic_launcher"
+        android:id="@+id/imageView"
+        android:layout_weight="7"/>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:inputType="textPersonName"
+        android:contentDescription="Search"
+        android:drawableLeft="@android:drawable/ic_menu_search"
+        android:ems="10"
+        android:id="@+id/editText"
+        android:layout_margin="@dimen/activity_horizontal_margin"
+        android:text="Search" />
+
+    <Button
+        android:text="Login"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:id="@+id/button"
+        android:layout_margin="@dimen/activity_horizontal_margin"/>
+
+    <Button
+        android:text="Sign Up"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:layout_gravity="right"
+        android:id="@+id/sign_up"
+        style="@style/Widget.AppCompat.Button.Small" />
+</LinearLayout>
